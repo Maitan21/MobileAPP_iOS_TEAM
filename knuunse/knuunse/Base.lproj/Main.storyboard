@@ -15,10 +15,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Astral_wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="7py-em-KdW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Astral_wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="DvY-sD-9Fj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XB-in-j1L">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKa-ZZ-Oww">
+                                <rect key="frame" x="20" y="244" width="374" height="539"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="149" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RFK-Fd-MTs">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="539"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="n5X-RI-J35" detailTextLabel="9Gw-JF-Y1w" rowHeight="149" style="IBUITableViewCellStyleSubtitle" id="XzC-fl-IRv">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="149"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XzC-fl-IRv" id="PBt-XZ-hZZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="149"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n5X-RI-J35">
+                                                            <rect key="frame" x="20" y="54" width="33.5" height="20.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="contents" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="52" id="9Gw-JF-Y1w">
+                                                            <rect key="frame" x="20" y="77.5" width="49.5" height="14.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="RFK-Fd-MTs" firstAttribute="top" secondItem="XKa-ZZ-Oww" secondAttribute="top" id="6yg-7I-GsM"/>
+                                    <constraint firstAttribute="bottom" secondItem="RFK-Fd-MTs" secondAttribute="bottom" id="Ra7-63-tkJ"/>
+                                    <constraint firstItem="RFK-Fd-MTs" firstAttribute="leading" secondItem="XKa-ZZ-Oww" secondAttribute="leading" id="iFa-yr-fLN"/>
+                                    <constraint firstAttribute="trailing" secondItem="RFK-Fd-MTs" secondAttribute="trailing" id="koU-bX-nBa"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-Co-qPT">
                                 <rect key="frame" x="10" y="64" width="56.5" height="30"/>
                                 <color key="backgroundColor" red="0.0075853331950000002" green="0.1590762734" blue="0.2588374913" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -26,31 +68,32 @@
                                 <state key="normal" title="메인" image="chevron.left" catalog="system">
                                     <color key="titleColor" red="0.99784129860000004" green="0.80802685019999998" blue="0.29003286360000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <action selector="clickBtn:" destination="Eau-Ii-Gc0" eventType="touchUpInside" id="4Lm-WT-Ige"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="0XB-in-j1L" firstAttribute="top" secondItem="dDM-ga-hH1" secondAttribute="top" constant="20" id="FhI-di-oFH"/>
-                            <constraint firstItem="dDM-ga-hH1" firstAttribute="trailing" secondItem="7py-em-KdW" secondAttribute="trailing" id="SFX-7I-xGu"/>
-                            <constraint firstItem="0XB-in-j1L" firstAttribute="leading" secondItem="dDM-ga-hH1" secondAttribute="leading" constant="10" id="njh-di-iX1"/>
-                            <constraint firstItem="dDM-ga-hH1" firstAttribute="leading" secondItem="7py-em-KdW" secondAttribute="leading" id="stR-5f-isE"/>
-                            <constraint firstAttribute="top" secondItem="7py-em-KdW" secondAttribute="top" id="ua1-10-pSL"/>
-                            <constraint firstItem="dDM-ga-hH1" firstAttribute="bottom" secondItem="7py-em-KdW" secondAttribute="bottom" id="zB9-6m-5vl"/>
+                            <constraint firstItem="dDM-ga-hH1" firstAttribute="trailing" secondItem="XKa-ZZ-Oww" secondAttribute="trailing" constant="20" id="EPA-WA-8Ga"/>
+                            <constraint firstItem="DvY-sD-9Fj" firstAttribute="leading" secondItem="CnP-np-snS" secondAttribute="leading" id="HL2-it-pQW"/>
+                            <constraint firstItem="cLd-Co-qPT" firstAttribute="leading" secondItem="dDM-ga-hH1" secondAttribute="leading" constant="10" id="NNq-fd-SqE"/>
+                            <constraint firstItem="dDM-ga-hH1" firstAttribute="bottom" secondItem="XKa-ZZ-Oww" secondAttribute="bottom" constant="30" id="QjO-Sz-7mO"/>
+                            <constraint firstItem="cLd-Co-qPT" firstAttribute="top" secondItem="dDM-ga-hH1" secondAttribute="top" constant="20" id="URS-1e-PS7"/>
+                            <constraint firstAttribute="trailing" secondItem="DvY-sD-9Fj" secondAttribute="trailing" id="W9o-hQ-KzS"/>
+                            <constraint firstItem="XKa-ZZ-Oww" firstAttribute="top" secondItem="dDM-ga-hH1" secondAttribute="top" constant="200" id="hQa-Id-l3Z"/>
+                            <constraint firstItem="XKa-ZZ-Oww" firstAttribute="leading" secondItem="dDM-ga-hH1" secondAttribute="leading" constant="20" id="qhT-pK-BKk"/>
+                            <constraint firstItem="DvY-sD-9Fj" firstAttribute="top" secondItem="CnP-np-snS" secondAttribute="top" id="r6p-77-xJe"/>
+                            <constraint firstItem="dDM-ga-hH1" firstAttribute="bottom" secondItem="DvY-sD-9Fj" secondAttribute="bottom" id="wag-79-Wot"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dDM-ga-hH1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="별자리운세" image="moon.stars" catalog="system" id="OvQ-Zt-F0c"/>
-                    <navigationItem key="navigationItem" title="별자리 운세" id="ohr-Tt-l9y"/>
+                    <tabBarItem key="tabBarItem" title="별자리 운세" image="moon.stars" catalog="system" id="nbi-gF-vBi"/>
                     <connections>
-                        <outlet property="backBtn" destination="0XB-in-j1L" id="W81-wH-8sl"/>
+                        <outlet property="AstralTableView" destination="RFK-Fd-MTs" id="32U-Zi-o0z"/>
+                        <outlet property="backBtn" destination="cLd-Co-qPT" id="nME-Hf-mSn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvi-wc-Bex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647.82608695652175" y="922.76785714285711"/>
+            <point key="canvasLocation" x="649" y="923"/>
         </scene>
         <!--관상-->
         <scene sceneID="dke-kk-Rkq">
@@ -99,7 +142,6 @@
                         <viewLayoutGuide key="safeArea" id="MeQ-gn-qJ7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="관상" image="faceid" catalog="system" id="jAl-zm-NQN"/>
-                    <navigationItem key="navigationItem" title="관상" id="YbT-2Y-BqL"/>
                     <connections>
                         <outlet property="WebView" destination="Uuj-cJ-Kv2" id="M14-2g-312"/>
                         <outlet property="backBtn" destination="5L5-d5-9Xp" id="feC-qg-gth"/>
@@ -219,7 +261,6 @@
                         <viewLayoutGuide key="safeArea" id="1Ll-1N-tLw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="오늘의 운세" image="paperplane" catalog="system" id="mEy-RT-xQg"/>
-                    <navigationItem key="navigationItem" title="오늘의 운세" id="Dqz-mC-UWc"/>
                     <connections>
                         <outlet property="ContentView" destination="1Z9-4p-pGj" id="V3e-fr-sW0"/>
                         <outlet property="backBtn" destination="Yu8-PJ-cOE" id="T4z-zh-CA8"/>
@@ -241,7 +282,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Rkd-cs-bZc" kind="relationship" relationship="viewControllers" id="54q-jM-mKj"/>
-                        <segue destination="Eau-Ii-Gc0" kind="relationship" relationship="viewControllers" id="yBQ-Vd-5aU"/>
+                        <segue destination="Eau-Ii-Gc0" kind="relationship" relationship="viewControllers" id="aLN-8P-fXW"/>
                         <segue destination="DMX-TF-rY4" kind="relationship" relationship="viewControllers" id="aR6-LR-l0g"/>
                         <segue destination="dKe-Eg-kCO" kind="relationship" relationship="viewControllers" id="gfE-sl-fXt"/>
                         <segue destination="xhY-rb-Mv1" kind="relationship" relationship="viewControllers" id="JIb-A7-xDf"/>
@@ -414,7 +455,6 @@
                         <viewLayoutGuide key="safeArea" id="0zB-Pc-laN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="메인" image="house" catalog="system" id="wFe-DL-PLb"/>
-                    <navigationItem key="navigationItem" title="메인" id="wzs-Kn-2V1"/>
                     <connections>
                         <outletCollection property="stackView" destination="RpF-mf-tIl" collectionClass="NSMutableArray" id="uUg-0v-h8M"/>
                         <outletCollection property="stackView" destination="Zky-Zs-uVh" collectionClass="NSMutableArray" id="16a-iH-eOC"/>
@@ -471,7 +511,6 @@
                         <viewLayoutGuide key="safeArea" id="Sis-8v-YmJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="설정" image="person.circle" catalog="system" id="VKY-Ph-8zF"/>
-                    <navigationItem key="navigationItem" title="설정" id="ttl-nM-dcf"/>
                     <connections>
                         <outlet property="backBtn" destination="NQX-To-TYG" id="jki-vO-cy0"/>
                     </connections>
