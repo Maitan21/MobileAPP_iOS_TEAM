@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9p6-vx-Dao">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9p6-vx-Dao">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -87,7 +87,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="별자리 운세" image="moon.stars" catalog="system" id="nbi-gF-vBi"/>
                     <connections>
-                        <outlet property="AstralTableView" destination="RFK-Fd-MTs" id="32U-Zi-o0z"/>
+                        <outlet property="AstralTableView" destination="RFK-Fd-MTs" id="bkM-kR-KMk"/>
                         <outlet property="backBtn" destination="cLd-Co-qPT" id="nME-Hf-mSn"/>
                     </connections>
                 </viewController>
