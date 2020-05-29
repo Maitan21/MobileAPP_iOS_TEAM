@@ -40,22 +40,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="에헤라디야" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75C-nV-b5e">
-                                <rect key="frame" x="150" y="323" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQa-be-052">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="utp-sb-33Z">
+                                <rect key="frame" x="197" y="440.5" width="20" height="20"/>
+                                <color key="color" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rQa-be-052" firstAttribute="bottom" secondItem="MeQ-gn-qJ7" secondAttribute="bottom" id="55k-b6-qGv"/>
+                            <constraint firstItem="rQa-be-052" firstAttribute="top" secondItem="MeQ-gn-qJ7" secondAttribute="top" id="7Ah-4d-DMI"/>
+                            <constraint firstItem="utp-sb-33Z" firstAttribute="centerX" secondItem="MeQ-gn-qJ7" secondAttribute="centerX" id="E5t-4p-I4O"/>
+                            <constraint firstItem="rQa-be-052" firstAttribute="trailing" secondItem="MeQ-gn-qJ7" secondAttribute="trailing" id="JdH-Ly-ff9"/>
+                            <constraint firstItem="utp-sb-33Z" firstAttribute="centerY" secondItem="MeQ-gn-qJ7" secondAttribute="centerY" id="q3k-Gg-tDE"/>
+                            <constraint firstItem="rQa-be-052" firstAttribute="leading" secondItem="MeQ-gn-qJ7" secondAttribute="leading" id="wFe-Dr-rMb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MeQ-gn-qJ7"/>
                     </view>
                     <navigationItem key="navigationItem" title="관상" id="YbT-2Y-BqL"/>
+                    <connections>
+                        <outlet property="WebView" destination="rQa-be-052" id="aKm-vO-J1Q"/>
+                        <outlet property="indicator" destination="utp-sb-33Z" id="kIG-AH-R64"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73h-l3-xyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2993" y="922"/>
+            <point key="canvasLocation" x="2992.753623188406" y="921.42857142857133"/>
         </scene>
         <!--오늘의 운세-->
         <scene sceneID="hgg-Ge-wjP">
@@ -432,7 +449,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="설정 레이아웃 이름 생년월일 초기화" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79i-na-2sP">
-                                <rect key="frame" x="141" y="272" width="93" height="123"/>
+                                <rect key="frame" x="141" y="272" width="160" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -446,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qkl-sa-S0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4212" y="921.58920539730138"/>
+            <point key="canvasLocation" x="4211.594202898551" y="921.42857142857133"/>
         </scene>
         <!--설정-->
         <scene sceneID="4S1-Fe-zQv">
