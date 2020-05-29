@@ -9,21 +9,19 @@
 import UIKit
 
 class AstralUnseViewController : UIViewController{
+    
+    @IBOutlet weak var backBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        let button = UIButton()
-        button.setImage(UIImage(systemName: "chevron.left"),for: .normal)
-        button.setTitle("메인",for: .normal)
-        button.setTitleColor(.link, for: .normal)
-        button.addTarget(self,action: #selector(clickBack), for: .touchUpInside)
-        button.sizeToFit()
-
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
+        
+       backBtn.layer.cornerRadius = 10.0
+        backBtn.contentEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
     }
-           
-    @objc func clickBack(_ sender:Any)
+    
+    @IBAction func clickBtn(_ sender : Any)
     {
         tabBarController?.selectedIndex = 0
     }
+
 }

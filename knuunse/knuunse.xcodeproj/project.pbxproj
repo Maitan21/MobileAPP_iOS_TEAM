@@ -10,26 +10,24 @@
 		A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091224769F88008E3612 /* TodaysUnseViewController.swift */; };
 		A766091524769F9A008E3612 /* AstralUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091424769F9A008E3612 /* AstralUnseViewController.swift */; };
 		A766091724769FBA008E3612 /* FaceUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091624769FBA008E3612 /* FaceUnseViewController.swift */; };
-		A7660962247CFFC9008E3612 /* main_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = A7660961247CFFC9008E3612 /* main_loading.png */; };
-		A7660964247D0015008E3612 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A7660963247D0014008E3612 /* title.png */; };
 		A7660966247F5E02008E3612 /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7660965247F5E02008E3612 /* SettingProfileViewController.swift */; };
+		A7660978248114B1008E3612 /* UnseCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7660977248114B1008E3612 /* UnseCellTableViewCell.swift */; };
+		A766097B24814F74008E3612 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A766097A24814F74008E3612 /* WebKit.framework */; };
 		A78B746A24768C9C009485CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B746924768C9C009485CB /* AppDelegate.swift */; };
 		A78B746C24768C9C009485CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B746B24768C9C009485CB /* SceneDelegate.swift */; };
 		A78B746E24768C9C009485CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B746D24768C9C009485CB /* ViewController.swift */; };
 		A78B747124768C9C009485CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78B746F24768C9C009485CB /* Main.storyboard */; };
 		A78B747324768C9D009485CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78B747224768C9D009485CB /* Assets.xcassets */; };
 		A78B747624768C9D009485CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78B747424768C9D009485CB /* LaunchScreen.storyboard */; };
-		D14CA256248112FB00E45E26 /* UnseCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14CA255248112FB00E45E26 /* UnseCellTableViewCell.swift */; };
-		D14CA259248114DA00E45E26 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14CA258248114DA00E45E26 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A766091224769F88008E3612 /* TodaysUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysUnseViewController.swift; sourceTree = "<group>"; };
 		A766091424769F9A008E3612 /* AstralUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstralUnseViewController.swift; sourceTree = "<group>"; };
 		A766091624769FBA008E3612 /* FaceUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceUnseViewController.swift; sourceTree = "<group>"; };
-		A7660961247CFFC9008E3612 /* main_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_loading.png; sourceTree = "<group>"; };
-		A7660963247D0014008E3612 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		A7660965247F5E02008E3612 /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
+		A7660977248114B1008E3612 /* UnseCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnseCellTableViewCell.swift; sourceTree = "<group>"; };
+		A766097A24814F74008E3612 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A78B746624768C9C009485CB /* knuunse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knuunse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78B746924768C9C009485CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A78B746B24768C9C009485CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,8 +36,6 @@
 		A78B747224768C9D009485CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A78B747524768C9D009485CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A78B747724768C9D009485CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D14CA255248112FB00E45E26 /* UnseCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnseCellTableViewCell.swift; sourceTree = "<group>"; };
-		D14CA258248114DA00E45E26 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,19 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14CA259248114DA00E45E26 /* WebKit.framework in Frameworks */,
+				A766097B24814F74008E3612 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A766097924814F72008E3612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A766097A24814F74008E3612 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A78B745D24768C9C009485CB = {
 			isa = PBXGroup;
 			children = (
 				A78B746824768C9C009485CB /* knuunse */,
 				A78B746724768C9C009485CB /* Products */,
-				D14CA257248114D900E45E26 /* Frameworks */,
+				A766097924814F72008E3612 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +78,7 @@
 		A78B746824768C9C009485CB /* knuunse */ = {
 			isa = PBXGroup;
 			children = (
+				A7660977248114B1008E3612 /* UnseCellTableViewCell.swift */,
 				A78B746924768C9C009485CB /* AppDelegate.swift */,
 				A78B746B24768C9C009485CB /* SceneDelegate.swift */,
 				A78B746D24768C9C009485CB /* ViewController.swift */,
@@ -81,23 +86,12 @@
 				A766091624769FBA008E3612 /* FaceUnseViewController.swift */,
 				A766091424769F9A008E3612 /* AstralUnseViewController.swift */,
 				A7660965247F5E02008E3612 /* SettingProfileViewController.swift */,
-				D14CA255248112FB00E45E26 /* UnseCellTableViewCell.swift */,
 				A78B746F24768C9C009485CB /* Main.storyboard */,
-				A7660963247D0014008E3612 /* title.png */,
-				A7660961247CFFC9008E3612 /* main_loading.png */,
 				A78B747224768C9D009485CB /* Assets.xcassets */,
 				A78B747424768C9D009485CB /* LaunchScreen.storyboard */,
 				A78B747724768C9D009485CB /* Info.plist */,
 			);
 			path = knuunse;
-			sourceTree = "<group>";
-		};
-		D14CA257248114D900E45E26 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D14CA258248114DA00E45E26 /* WebKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78B747624768C9D009485CB /* LaunchScreen.storyboard in Resources */,
-				A7660962247CFFC9008E3612 /* main_loading.png in Resources */,
 				A78B747324768C9D009485CB /* Assets.xcassets in Resources */,
 				A78B747124768C9C009485CB /* Main.storyboard in Resources */,
-				A7660964247D0015008E3612 /* title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +169,10 @@
 				A78B746E24768C9C009485CB /* ViewController.swift in Sources */,
 				A78B746A24768C9C009485CB /* AppDelegate.swift in Sources */,
 				A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */,
+				A7660978248114B1008E3612 /* UnseCellTableViewCell.swift in Sources */,
 				A766091724769FBA008E3612 /* FaceUnseViewController.swift in Sources */,
 				A7660966247F5E02008E3612 /* SettingProfileViewController.swift in Sources */,
 				A78B746C24768C9C009485CB /* SceneDelegate.swift in Sources */,
-				D14CA256248112FB00E45E26 /* UnseCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,13 +317,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XCVC3H3F42;
 				INFOPLIST_FILE = knuunse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.comp420.knuunse2;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.comp420.knuunse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,13 +334,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XCVC3H3F42;
 				INFOPLIST_FILE = knuunse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.comp420.knuunse2;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.comp420.knuunse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
