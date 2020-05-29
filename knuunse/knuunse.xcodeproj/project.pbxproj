@@ -10,6 +10,9 @@
 		A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091224769F88008E3612 /* TodaysUnseViewController.swift */; };
 		A766091524769F9A008E3612 /* AstralUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091424769F9A008E3612 /* AstralUnseViewController.swift */; };
 		A766091724769FBA008E3612 /* FaceUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091624769FBA008E3612 /* FaceUnseViewController.swift */; };
+		A7660962247CFFC9008E3612 /* main_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = A7660961247CFFC9008E3612 /* main_loading.png */; };
+		A7660964247D0015008E3612 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A7660963247D0014008E3612 /* title.png */; };
+		A7660966247F5E02008E3612 /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7660965247F5E02008E3612 /* SettingProfileViewController.swift */; };
 		A78B746A24768C9C009485CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B746924768C9C009485CB /* AppDelegate.swift */; };
 		A78B746C24768C9C009485CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B746B24768C9C009485CB /* SceneDelegate.swift */; };
 		A78B746E24768C9C009485CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B746D24768C9C009485CB /* ViewController.swift */; };
@@ -22,6 +25,9 @@
 		A766091224769F88008E3612 /* TodaysUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysUnseViewController.swift; sourceTree = "<group>"; };
 		A766091424769F9A008E3612 /* AstralUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstralUnseViewController.swift; sourceTree = "<group>"; };
 		A766091624769FBA008E3612 /* FaceUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceUnseViewController.swift; sourceTree = "<group>"; };
+		A7660961247CFFC9008E3612 /* main_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_loading.png; sourceTree = "<group>"; };
+		A7660963247D0014008E3612 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		A7660965247F5E02008E3612 /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
 		A78B746624768C9C009485CB /* knuunse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knuunse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78B746924768C9C009485CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A78B746B24768C9C009485CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +74,10 @@
 				A766091224769F88008E3612 /* TodaysUnseViewController.swift */,
 				A766091624769FBA008E3612 /* FaceUnseViewController.swift */,
 				A766091424769F9A008E3612 /* AstralUnseViewController.swift */,
+				A7660965247F5E02008E3612 /* SettingProfileViewController.swift */,
 				A78B746F24768C9C009485CB /* Main.storyboard */,
+				A7660963247D0014008E3612 /* title.png */,
+				A7660961247CFFC9008E3612 /* main_loading.png */,
 				A78B747224768C9D009485CB /* Assets.xcassets */,
 				A78B747424768C9D009485CB /* LaunchScreen.storyboard */,
 				A78B747724768C9D009485CB /* Info.plist */,
@@ -135,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78B747624768C9D009485CB /* LaunchScreen.storyboard in Resources */,
+				A7660962247CFFC9008E3612 /* main_loading.png in Resources */,
 				A78B747324768C9D009485CB /* Assets.xcassets in Resources */,
 				A78B747124768C9C009485CB /* Main.storyboard in Resources */,
+				A7660964247D0015008E3612 /* title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +163,7 @@
 				A78B746A24768C9C009485CB /* AppDelegate.swift in Sources */,
 				A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */,
 				A766091724769FBA008E3612 /* FaceUnseViewController.swift in Sources */,
+				A7660966247F5E02008E3612 /* SettingProfileViewController.swift in Sources */,
 				A78B746C24768C9C009485CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
