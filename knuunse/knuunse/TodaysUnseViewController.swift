@@ -11,7 +11,8 @@ import UIKit
 class TodaysUnseViewController : UIViewController , UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var ContentView: UIView!
     
-   
+    @IBOutlet weak var backBtn: UIButton!
+    
     var unse = [[String:String]]()
     
     var Zodiac:[String] = ["쥐띠","소띠","호랑이띠","토끼띠","용띠","뱀띠","말띠","양띠","원숭이띠","닭띠","개띠","돼지띠"]
@@ -21,6 +22,9 @@ class TodaysUnseViewController : UIViewController , UITableViewDelegate, UITable
     @IBOutlet weak var unseTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backBtn.layer.cornerRadius = 10.0
+        backBtn.contentEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
         
         let date = Date()
         let calendar = Calendar.current

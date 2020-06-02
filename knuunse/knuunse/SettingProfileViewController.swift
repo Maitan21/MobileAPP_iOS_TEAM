@@ -10,8 +10,13 @@ import UIKit
 
 class SettingProfileViewController: UIViewController {
 
+    @IBOutlet weak var backBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backBtn.layer.cornerRadius = 10.0
+        backBtn.contentEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
     }
 
     @IBAction func clickBtn(_ sender : Any)
