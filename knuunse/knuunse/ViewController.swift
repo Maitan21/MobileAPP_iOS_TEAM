@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var stackView: [UIStackView]!
     
+    @IBOutlet weak var contentView: UIView!
     static var db = DBHelper()
     
     static var mUser : User? = nil
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        contentView.layer.cornerRadius = 20.0
         
         for i in stackView{
         i.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(clickButton(_:))))
@@ -34,14 +37,12 @@ class ViewController: UIViewController {
     }
     
     func loadUserData(){
-        let data = ViewController.db.read()
-        if data == nil {
+        ViewController.mUser = ViewController.db.read()
+        if ViewController.mUser == nil {
             let vc = storyboard?.instantiateViewController(withIdentifier: "createID") as! CreateIdViewController
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
             
-        }else {
-            ViewController.mUser = data
         }
     }
 
