@@ -35,11 +35,12 @@ class CreateIdViewController: UIViewController,UITextFieldDelegate {
         
 
     }
-    
+    /*키보드 외부를 터치하면 키보드가 내려가도록*/
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
                 self.view.endEditing(true)
           }
 }
+/*키보드의 리턴키를 (엔터) 입력하면 키보드가 내려가도록*/
 extension CreateIdViewController {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
