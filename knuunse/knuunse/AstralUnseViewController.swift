@@ -10,7 +10,9 @@ import UIKit
 
 class AstralUnseViewController : UIViewController, UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet weak var myUnseBtn: UIButton!
     @IBOutlet weak var ContentView: UIView!
+    @IBOutlet weak var myAstralUnseView: UIView!
     
     var dataList = [[String:String]]()
     var constell:[String] = ["capricorn", "aquarius", "aries", "cancer", "gemini", "leo", "libra", "pisces", "sagittarius", "scorpio", "taurus", "virgo"]
@@ -30,9 +32,12 @@ class AstralUnseViewController : UIViewController, UITableViewDelegate, UITableV
         }
         
         backBtn.layer.cornerRadius = 10.0
+        myUnseBtn.layer.cornerRadius = 20.0
         backBtn.contentEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
         
         self.AstralTableView.layer.cornerRadius = 20.0
+        self.myAstralUnseView.layer.cornerRadius = 20.0
+        
         ContentView.layer.cornerRadius = 20.0
         AstralTableView.delegate = self
         AstralTableView.dataSource = self
@@ -89,6 +94,16 @@ class AstralUnseViewController : UIViewController, UITableViewDelegate, UITableV
          
     }
     
+    @IBAction func clickView(_ sender : Any)
+    {
+        if myAstralUnseView.isHidden {
+            myUnseBtn.setTitle("모든 운세 보기", for: .normal)
+        }else
+        {
+            myUnseBtn.setTitle("내 운세만 보기", for: .normal)
+        }
+        myAstralUnseView.isHidden = !myAstralUnseView.isHidden
+    }
     
     @IBAction func clickBtn(_ sender : Any)
     {

@@ -51,13 +51,23 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <containerView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-Ak-TZC">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="388"/>
+                                        <connections>
+                                            <segue destination="GpM-3S-bKa" kind="embed" id="23Q-2Z-wG5"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="RFK-Fd-MTs" firstAttribute="top" secondItem="XKa-ZZ-Oww" secondAttribute="top" id="6yg-7I-GsM"/>
+                                    <constraint firstItem="eIY-Ak-TZC" firstAttribute="top" secondItem="bVH-Tn-E1U" secondAttribute="top" id="7UX-5S-EOp"/>
+                                    <constraint firstItem="eIY-Ak-TZC" firstAttribute="leading" secondItem="bVH-Tn-E1U" secondAttribute="leading" id="EIF-5c-g7p"/>
+                                    <constraint firstItem="bVH-Tn-E1U" firstAttribute="trailing" secondItem="eIY-Ak-TZC" secondAttribute="trailing" id="ElL-Uk-rti"/>
                                     <constraint firstAttribute="bottom" secondItem="RFK-Fd-MTs" secondAttribute="bottom" id="Ra7-63-tkJ"/>
                                     <constraint firstItem="RFK-Fd-MTs" firstAttribute="leading" secondItem="XKa-ZZ-Oww" secondAttribute="leading" id="iFa-yr-fLN"/>
                                     <constraint firstAttribute="trailing" secondItem="RFK-Fd-MTs" secondAttribute="trailing" id="koU-bX-nBa"/>
+                                    <constraint firstItem="bVH-Tn-E1U" firstAttribute="bottom" secondItem="eIY-Ak-TZC" secondAttribute="bottom" id="mXV-sa-z5M"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="bVH-Tn-E1U"/>
                             </view>
@@ -70,6 +80,18 @@
                                     <color key="titleColor" red="0.99784129860000004" green="0.80802685019999998" blue="0.29003286360000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEN-j9-Dcj">
+                                <rect key="frame" x="249" y="152" width="106" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="내 운세만 보기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickView:" destination="Eau-Ii-Gc0" eventType="touchUpInside" id="ox8-MF-Hxc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -79,7 +101,9 @@
                             <constraint firstItem="dDM-ga-hH1" firstAttribute="bottom" secondItem="XKa-ZZ-Oww" secondAttribute="bottom" constant="30" id="QjO-Sz-7mO"/>
                             <constraint firstItem="cLd-Co-qPT" firstAttribute="top" secondItem="dDM-ga-hH1" secondAttribute="top" constant="20" id="URS-1e-PS7"/>
                             <constraint firstAttribute="trailing" secondItem="DvY-sD-9Fj" secondAttribute="trailing" id="W9o-hQ-KzS"/>
+                            <constraint firstItem="eIY-Ak-TZC" firstAttribute="top" secondItem="TEN-j9-Dcj" secondAttribute="bottom" constant="10" id="dyz-Oz-CmK"/>
                             <constraint firstItem="XKa-ZZ-Oww" firstAttribute="top" secondItem="dDM-ga-hH1" secondAttribute="top" constant="200" id="hQa-Id-l3Z"/>
+                            <constraint firstItem="TEN-j9-Dcj" firstAttribute="trailing" secondItem="XKa-ZZ-Oww" secondAttribute="trailing" id="lp2-RX-Zvz"/>
                             <constraint firstItem="XKa-ZZ-Oww" firstAttribute="leading" secondItem="dDM-ga-hH1" secondAttribute="leading" constant="20" id="qhT-pK-BKk"/>
                             <constraint firstItem="DvY-sD-9Fj" firstAttribute="top" secondItem="CnP-np-snS" secondAttribute="top" id="r6p-77-xJe"/>
                             <constraint firstItem="dDM-ga-hH1" firstAttribute="bottom" secondItem="DvY-sD-9Fj" secondAttribute="bottom" id="wag-79-Wot"/>
@@ -91,6 +115,8 @@
                         <outlet property="AstralTableView" destination="RFK-Fd-MTs" id="32U-Zi-o0z"/>
                         <outlet property="ContentView" destination="XKa-ZZ-Oww" id="YnJ-me-KRB"/>
                         <outlet property="backBtn" destination="cLd-Co-qPT" id="nME-Hf-mSn"/>
+                        <outlet property="myAstralUnseView" destination="eIY-Ak-TZC" id="X8g-IY-ZC5"/>
+                        <outlet property="myUnseBtn" destination="TEN-j9-Dcj" id="nIv-ir-iut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvi-wc-Bex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -582,6 +608,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qkl-sa-S0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4211.594202898551" y="921.42857142857133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Grc-YH-Ubf">
+            <objects>
+                <viewController id="GpM-3S-bKa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="60j-V5-Zlh">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="388"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3C-kp-nhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="1017"/>
         </scene>
     </scenes>
     <resources>

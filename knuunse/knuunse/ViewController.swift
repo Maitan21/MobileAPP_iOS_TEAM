@@ -59,6 +59,12 @@ class ViewController: UIViewController {
         }else{
             tabBarController?.selectedIndex = 4
         }
-    }  
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+          self.view.endEditing(true)
+
+    }
 }
 
