@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A745C00D248535A400F7E8B8 /* CreateIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745C00C248535A400F7E8B8 /* CreateIdViewController.swift */; };
+		A745C00F24853DEE00F7E8B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745C00E24853DEE00F7E8B8 /* User.swift */; };
+		A745C0112485403000F7E8B8 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745C0102485403000F7E8B8 /* DBHelper.swift */; };
 		A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091224769F88008E3612 /* TodaysUnseViewController.swift */; };
 		A766091524769F9A008E3612 /* AstralUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091424769F9A008E3612 /* AstralUnseViewController.swift */; };
 		A766091724769FBA008E3612 /* FaceUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091624769FBA008E3612 /* FaceUnseViewController.swift */; };
@@ -19,9 +22,13 @@
 		A78B747124768C9C009485CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78B746F24768C9C009485CB /* Main.storyboard */; };
 		A78B747324768C9D009485CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78B747224768C9D009485CB /* Assets.xcassets */; };
 		A78B747624768C9D009485CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78B747424768C9D009485CB /* LaunchScreen.storyboard */; };
+		ED00433B2493962800877E2D /* myUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED00433A2493962800877E2D /* myUnseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A745C00C248535A400F7E8B8 /* CreateIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIdViewController.swift; sourceTree = "<group>"; };
+		A745C00E24853DEE00F7E8B8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A745C0102485403000F7E8B8 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		A766091224769F88008E3612 /* TodaysUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysUnseViewController.swift; sourceTree = "<group>"; };
 		A766091424769F9A008E3612 /* AstralUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstralUnseViewController.swift; sourceTree = "<group>"; };
 		A766091624769FBA008E3612 /* FaceUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceUnseViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		A78B747224768C9D009485CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A78B747524768C9D009485CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A78B747724768C9D009485CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED00433A2493962800877E2D /* myUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myUnseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +90,18 @@
 				A78B746924768C9C009485CB /* AppDelegate.swift */,
 				A78B746B24768C9C009485CB /* SceneDelegate.swift */,
 				A78B746D24768C9C009485CB /* ViewController.swift */,
+				A745C0102485403000F7E8B8 /* DBHelper.swift */,
 				A766091224769F88008E3612 /* TodaysUnseViewController.swift */,
 				A766091624769FBA008E3612 /* FaceUnseViewController.swift */,
 				A766091424769F9A008E3612 /* AstralUnseViewController.swift */,
+				ED00433A2493962800877E2D /* myUnseViewController.swift */,
 				A7660965247F5E02008E3612 /* SettingProfileViewController.swift */,
 				A78B746F24768C9C009485CB /* Main.storyboard */,
+				A745C00C248535A400F7E8B8 /* CreateIdViewController.swift */,
 				A78B747224768C9D009485CB /* Assets.xcassets */,
 				A78B747424768C9D009485CB /* LaunchScreen.storyboard */,
 				A78B747724768C9D009485CB /* Info.plist */,
+				A745C00E24853DEE00F7E8B8 /* User.swift */,
 			);
 			path = knuunse;
 			sourceTree = "<group>";
@@ -165,13 +177,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A745C0112485403000F7E8B8 /* DBHelper.swift in Sources */,
 				A766091524769F9A008E3612 /* AstralUnseViewController.swift in Sources */,
 				A78B746E24768C9C009485CB /* ViewController.swift in Sources */,
 				A78B746A24768C9C009485CB /* AppDelegate.swift in Sources */,
+				A745C00D248535A400F7E8B8 /* CreateIdViewController.swift in Sources */,
+				ED00433B2493962800877E2D /* myUnseViewController.swift in Sources */,
 				A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */,
 				A7660978248114B1008E3612 /* UnseCellTableViewCell.swift in Sources */,
 				A766091724769FBA008E3612 /* FaceUnseViewController.swift in Sources */,
 				A7660966247F5E02008E3612 /* SettingProfileViewController.swift in Sources */,
+				A745C00F24853DEE00F7E8B8 /* User.swift in Sources */,
 				A78B746C24768C9C009485CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
