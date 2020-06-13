@@ -43,9 +43,7 @@ class AstralUnseViewController : UIViewController, UITableViewDelegate, UITableV
      
         }
         
-        backBtn.layer.cornerRadius = 10.0
         myUnseBtn.layer.cornerRadius = 20.0
-        backBtn.contentEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
         
         self.AstralTableView.layer.cornerRadius = 20.0
         self.myAstralUnseView.layer.cornerRadius = 20.0

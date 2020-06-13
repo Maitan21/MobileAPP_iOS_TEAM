@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  knuunse
 //
-//  Created by 성진용 on 2020/05/21.
+//  Created by Cho YoonSang on 2020/06/13.
 //  Copyright © 2020 COMP420. All rights reserved.
 //
 

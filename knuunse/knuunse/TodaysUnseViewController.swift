@@ -11,7 +11,7 @@ import UIKit
 class TodaysUnseViewController : UIViewController , UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var ContentView: UIView!
     
-    @IBOutlet weak var backBtn: UIButton!
+    
     
     var unse = [[String:String]]()
     
@@ -24,8 +24,7 @@ class TodaysUnseViewController : UIViewController , UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         /*뒤로가기 버튼 굴곡*/
-        backBtn.layer.cornerRadius = 10.0 
-        backBtn.contentEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
+        
         /*오늘의 날짜를 운세 랜덤에 시드값으로 사용하기 위한 변수*/
         let date = Date()
         let calendar = Calendar.current
