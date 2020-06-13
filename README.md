@@ -3,7 +3,9 @@
 Copyright © Team2
 To Do Applictation made with Swift5
 
-### Introduce
+ScreenShots
+------------
 ![Readme1](./img/Readme1.png)
-### Developer
+Developer
+------------
 ![Readme2](./img/Readme2.png)
