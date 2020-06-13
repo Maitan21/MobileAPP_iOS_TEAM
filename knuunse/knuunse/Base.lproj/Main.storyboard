@@ -90,6 +90,7 @@
                             <constraint firstItem="DvY-sD-9Fj" firstAttribute="leading" secondItem="CnP-np-snS" secondAttribute="leading" id="HL2-it-pQW"/>
                             <constraint firstItem="dDM-ga-hH1" firstAttribute="bottom" secondItem="XKa-ZZ-Oww" secondAttribute="bottom" constant="30" id="QjO-Sz-7mO"/>
                             <constraint firstAttribute="trailing" secondItem="DvY-sD-9Fj" secondAttribute="trailing" id="W9o-hQ-KzS"/>
+                            <constraint firstItem="dDM-ga-hH1" firstAttribute="bottom" secondItem="eIY-Ak-TZC" secondAttribute="bottom" constant="30" id="cQE-dm-PkW"/>
                             <constraint firstItem="eIY-Ak-TZC" firstAttribute="top" secondItem="TEN-j9-Dcj" secondAttribute="bottom" constant="10" id="dyz-Oz-CmK"/>
                             <constraint firstItem="XKa-ZZ-Oww" firstAttribute="top" secondItem="dDM-ga-hH1" secondAttribute="top" constant="200" id="hQa-Id-l3Z"/>
                             <constraint firstItem="TEN-j9-Dcj" firstAttribute="trailing" secondItem="XKa-ZZ-Oww" secondAttribute="trailing" id="lp2-RX-Zvz"/>
@@ -594,15 +595,23 @@
                                     <action selector="resetData:" destination="xhY-rb-Mv1" eventType="touchUpInside" id="0K6-6y-1R1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © KNU_MobileApp_Team2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwh-vI-dhI">
+                                <rect key="frame" x="97" y="780" width="220.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Sis-8v-YmJ" firstAttribute="trailing" secondItem="PTj-W9-7yp" secondAttribute="trailing" constant="107" id="62p-5g-mwP"/>
                             <constraint firstItem="Sis-8v-YmJ" firstAttribute="trailing" secondItem="DCS-nn-yDp" secondAttribute="trailing" constant="87" id="8RJ-p4-W1w"/>
                             <constraint firstItem="Sis-8v-YmJ" firstAttribute="bottom" secondItem="DCS-nn-yDp" secondAttribute="bottom" constant="59" id="Dba-ec-HXm"/>
+                            <constraint firstItem="Sis-8v-YmJ" firstAttribute="bottom" secondItem="Vwh-vI-dhI" secondAttribute="bottom" constant="17" id="EEh-Ea-hOD"/>
                             <constraint firstItem="uzP-8Z-tWj" firstAttribute="leading" secondItem="Sis-8v-YmJ" secondAttribute="leading" id="J7v-sQ-xe3"/>
                             <constraint firstItem="LP1-2Z-hLu" firstAttribute="trailing" secondItem="PTj-W9-7yp" secondAttribute="trailing" id="N3T-CL-UVx"/>
                             <constraint firstItem="LP1-2Z-hLu" firstAttribute="leading" secondItem="PTj-W9-7yp" secondAttribute="leading" id="Nlt-N7-oNK"/>
+                            <constraint firstItem="Vwh-vI-dhI" firstAttribute="centerX" secondItem="Sis-8v-YmJ" secondAttribute="centerX" id="UCj-ZB-9Gy"/>
                             <constraint firstItem="uzP-8Z-tWj" firstAttribute="top" secondItem="oq9-J8-UgU" secondAttribute="top" id="XEb-cu-2lQ"/>
                             <constraint firstItem="DCS-nn-yDp" firstAttribute="leading" secondItem="Sis-8v-YmJ" secondAttribute="leading" constant="87" id="cNb-mW-D2I"/>
                             <constraint firstItem="79i-na-2sP" firstAttribute="top" secondItem="PTj-W9-7yp" secondAttribute="bottom" constant="22" id="dWJ-AH-XBJ"/>
