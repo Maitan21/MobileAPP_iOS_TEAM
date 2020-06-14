@@ -2,7 +2,7 @@
 //  GitPage.swift
 //  knuunse
 //
-//  Created by Jho on 2020/06/13.
+//  Created by Jho YoonSang on 2020/06/13.
 //  Copyright © 2020 COMP420. All rights reserved.
 //
 
