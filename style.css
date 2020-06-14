@@ -179,7 +179,7 @@ body {
 .bar-container {
   height: 2.7rem;
 }
-.dinosaure-box {
+.dinosaur-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -188,7 +188,7 @@ body {
   width: 100%;
   background-color: rgba(117, 204, 84, 0.2);
 }
-.dinosaure-bar {
+.dinosaur-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -319,10 +319,10 @@ body {
 .animal-explain {
     font-size: 1.4rem;
 }
-.dinosaure-animal-title {
+.dinosaur-animal-title {
     color: #3ba363;
 }
-.dinosaure-animal-celeb {
+.dinosaur-animal-celeb {
     color: #3ba363;
     font-size: 1.1rem;
 }
