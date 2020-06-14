@@ -51,7 +51,7 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <containerView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-Ak-TZC">
+                                    <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-Ak-TZC">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="489"/>
                                         <connections>
                                             <segue destination="GpM-3S-bKa" kind="embed" id="23Q-2Z-wG5"/>
@@ -76,7 +76,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <state key="normal" title="내 운세만 보기">
+                                <state key="normal" title="모든 운세 보기">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
