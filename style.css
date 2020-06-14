@@ -179,7 +179,7 @@ body {
 .bar-container {
   height: 2.7rem;
 }
-.dinosaur-box {
+.dinosaure-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -188,7 +188,7 @@ body {
   width: 100%;
   background-color: rgba(117, 204, 84, 0.2);
 }
-.dinosaur-bar {
+.dinosaure-bar {
   position: absolute;
   top: 0;
   left: 0;
