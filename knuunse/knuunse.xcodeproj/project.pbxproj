@@ -10,6 +10,7 @@
 		A745C00D248535A400F7E8B8 /* CreateIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745C00C248535A400F7E8B8 /* CreateIdViewController.swift */; };
 		A745C00F24853DEE00F7E8B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745C00E24853DEE00F7E8B8 /* User.swift */; };
 		A745C0112485403000F7E8B8 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745C0102485403000F7E8B8 /* DBHelper.swift */; };
+		A745C0132495B79600F7E8B8 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745C0122495B79600F7E8B8 /* DataSet.swift */; };
 		A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091224769F88008E3612 /* TodaysUnseViewController.swift */; };
 		A766091524769F9A008E3612 /* AstralUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091424769F9A008E3612 /* AstralUnseViewController.swift */; };
 		A766091724769FBA008E3612 /* FaceUnseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766091624769FBA008E3612 /* FaceUnseViewController.swift */; };
@@ -31,6 +32,7 @@
 		A745C00C248535A400F7E8B8 /* CreateIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIdViewController.swift; sourceTree = "<group>"; };
 		A745C00E24853DEE00F7E8B8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A745C0102485403000F7E8B8 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		A745C0122495B79600F7E8B8 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 		A766091224769F88008E3612 /* TodaysUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysUnseViewController.swift; sourceTree = "<group>"; };
 		A766091424769F9A008E3612 /* AstralUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstralUnseViewController.swift; sourceTree = "<group>"; };
 		A766091624769FBA008E3612 /* FaceUnseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceUnseViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				A78B747724768C9D009485CB /* Info.plist */,
 				A745C00E24853DEE00F7E8B8 /* User.swift */,
 				D1AC5E3D2494F95000B4C050 /* GitPage.swift */,
+				A745C0122495B79600F7E8B8 /* DataSet.swift */,
 			);
 			path = knuunse;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				D1AC5E3C2494ADB200B4C050 /* TabbarController.swift in Sources */,
 				A78B746A24768C9C009485CB /* AppDelegate.swift in Sources */,
 				A745C00D248535A400F7E8B8 /* CreateIdViewController.swift in Sources */,
+				A745C0132495B79600F7E8B8 /* DataSet.swift in Sources */,
 				ED00433B2493962800877E2D /* myUnseViewController.swift in Sources */,
 				A766091324769F88008E3612 /* TodaysUnseViewController.swift in Sources */,
 				A7660978248114B1008E3612 /* UnseCellTableViewCell.swift in Sources */,

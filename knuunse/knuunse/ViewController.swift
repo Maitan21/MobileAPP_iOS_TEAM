@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
  
     static var db = DBHelper()
+    static var unse = DataSet()
     static var mUser : User? = nil
     
     
